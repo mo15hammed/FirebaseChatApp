@@ -4,10 +4,12 @@ Simple one to one chat application.
 
 * features
 
-  1- login / regitser.
+  1- Login / Regitser.
 
-  2- User profiles.
-
-  3- Friends requests.
+  2- Fully Realtime.
   
-  4- Notifications.
+  3- User profiles.
+
+  4- Friends requests.
+  
+  5- Notifications.
