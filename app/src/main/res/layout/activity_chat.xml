@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DEDEDE"
+    tools:context=".ChatActivity">
+
+    <include
+        layout="@layout/app_bar_layout"
+        android:id="@+id/chat_app_bar" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerMessages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/chat_app_bar"
+        android:layout_above="@+id/linear"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:clipToPadding="false"
+
+        />
+
+    <TextView
+        android:id="@+id/txt_place_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Say hi and start a conversation."
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="10"
+        android:background="@android:color/white"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:id="@+id/img_add"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_add"
+            android:background="@android:color/white"
+            android:layout_weight="1"
+            />
+
+        <EditText
+            android:id="@+id/edt_message"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:hint="Enter message..."
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:inputType="text"
+            android:background="@null"
+            />
+
+        <ImageButton
+            android:id="@+id/img_send"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:src="@drawable/ic_send"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
